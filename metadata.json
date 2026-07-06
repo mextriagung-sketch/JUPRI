@@ -1,0 +1,6 @@
+{
+  "name": "Undangan Digital Dea & Jupri",
+  "description": "Undangan Pernikahan Digital Elegan Dea Husnul Khotimah, S.Pd & Jupriyanto, S.E",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

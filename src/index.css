@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-luxury: 'Cinzel', serif;
+  --font-script: 'Great Vibes', cursive;
+  
+  --color-maroon-50: #fdf3f4;
+  --color-maroon-100: #fbe5e7;
+  --color-maroon-200: #f6ced1;
+  --color-maroon-300: #eea6ac;
+  --color-maroon-400: #e1747e;
+  --color-maroon-500: #ce4855;
+  --color-maroon-600: #b52c3b;
+  --color-maroon-700: #82040a;
+  --color-maroon-800: #6b0308;
+  --color-maroon-900: #590206;
+  --color-maroon-950: #330103;
+}
+
+@layer utilities {
+  .bg-metallic-maroon {
+    background: radial-gradient(circle at center, #82040a 0%, #610a0d 50%, #300103 100%);
+  }
+  .text-gold {
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .border-gold {
+    border-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c) 1;
+  }
+  
+  /* Moving Ornament Animations */
+  .animate-spin-slow {
+    animation: spin-slow 25s linear infinite;
+  }
+  .animate-spin-slow-reverse {
+    animation: spin-slow-reverse 35s linear infinite;
+  }
+  .animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+  .animate-float-slower {
+    animation: float-slower 12s ease-in-out infinite;
+  }
+  .animate-sway-slow {
+    animation: sway-slow 7s ease-in-out infinite;
+    transform-origin: top center;
+  }
+  .animate-sway-slower {
+    animation: sway-slower 9s ease-in-out infinite;
+    transform-origin: top center;
+  }
+  .animate-shimmer-gold {
+    background: linear-gradient(
+      90deg,
+      rgba(191,149,63,0) 0%,
+      rgba(252,246,186,0.3) 50%,
+      rgba(171,119,28,0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-gold 4s infinite;
+  }
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(-4deg); }
+}
+
+@keyframes sway-slow {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+
+@keyframes sway-slower {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+
+@keyframes shimmer-gold {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Custom styles for smooth scroll and general beauty */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #610a0d;
+  color: #f6e6e9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
