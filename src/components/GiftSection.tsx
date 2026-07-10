@@ -14,6 +14,13 @@ export default function GiftSection() {
       accountHolder: 'JUPRIANTO',
       logo: 'BNI'
     },
+    {
+      id: 'bank-4',
+      bankName: 'BANK SUMSEL BABEL',
+      accountNumber: '17209014568',
+      accountHolder: 'Dea Husnul Khotimah',
+      logo: 'SumselBabel'
+    }
   ];
 
   const shippingAddress = {

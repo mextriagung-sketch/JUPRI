@@ -32,6 +32,10 @@ import { RotatingMandala, FloatingSparkles, AmbientLightPulse, IslamicLantern, I
 // Import beautiful generated assets
 const luxuryRoseBanner = 'https://lh3.googleusercontent.com/d/1-znBTEFksuV2tumfvkYMUlB9ZolaYzf-';
 const galleryPhoto3 = 'https://lh3.googleusercontent.com/d/1Z96Le5NkIC7QE0F2EsBhjw9amWUxVVzD';
+const galleryPhoto4 = 'https://lh3.googleusercontent.com/d/17_kvwjyzlh64zDsvxDOXKCXlV4ejoLUs';
+const galleryPhoto5 = 'https://lh3.googleusercontent.com/d/1ARkj7UUCiXAXokDLIFuuLR2NSu1aMOnY';
+const galleryPhoto6 = 'https://lh3.googleusercontent.com/d/15ATxIvBq2-YT-trwA45VgKWd87NkhuFp';
+const galleryPhoto7 = 'https://lh3.googleusercontent.com/d/1ztOoDF_P6t6ZZEKmP-VUHx-MBvn_srlX';
 const weddingCoupleArt = 'https://lh3.googleusercontent.com/d/1u--oVb9bY-SFJhCpoV-cymzmKCYlhx0f';
 
 export default function App() {
@@ -469,6 +473,26 @@ export default function App() {
                   url: galleryPhoto3,
                   title: 'Momen Indah',
                   desc: 'Setiap detik bersamamu adalah anugerah terindah'
+                },
+                {
+                  url: galleryPhoto4,
+                  title: 'Kebersamaan Indah',
+                  desc: 'Melangkah bersama dalam ridho-Nya menuju jannah'
+                },
+                {
+                  url: galleryPhoto5,
+                  title: 'Kisah Kita',
+                  desc: 'Setiap senyuman menyimpan sejuta harapan indah'
+                },
+                {
+                  url: galleryPhoto6,
+                  title: 'Bahagia Bersama',
+                  desc: 'Menatap masa depan dengan keyakinan penuh cinta'
+                },
+                {
+                  url: galleryPhoto7,
+                  title: 'Satu Tujuan',
+                  desc: 'Mengarungi bahtera rumah tangga yang sakinah, mawaddah, warahmah'
                 }
               ]}
             />
