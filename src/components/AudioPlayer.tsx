@@ -8,7 +8,7 @@ interface AudioPlayerProps {
 
 export default function AudioPlayer({ isPlaying, setIsPlaying }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [audioUrl] = useState('https://www.dropbox.com/scl/fi/oc49pdd4lxb9koiiq0pyq/videoplayback.mp3?rlkey=8f8sxwy8zh8deoskqh831h7oe&st=ljnco625&raw=1');
+  const [audioUrl] = useState('https://www.dropbox.com/scl/fi/dlski0vr82tdez38vco6i/vidssave.com-YTB_1781684181001-144P-diedit.mp3?rlkey=5i0m650nc7yl04gly1200ynln&st=rr9xy5xh&raw=1');
 
   useEffect(() => {
     // Create audio element

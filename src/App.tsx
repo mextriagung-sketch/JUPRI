@@ -27,10 +27,11 @@ import RsvpForm from './components/RsvpForm';
 import WishesBoard from './components/WishesBoard';
 import GiftSection from './components/GiftSection';
 import GallerySlider from './components/GallerySlider';
+import LoveStory from './components/LoveStory';
 import { RotatingMandala, FloatingSparkles, AmbientLightPulse, IslamicLantern, IslamicStarOrnament, ArabicCircularOrnament, LuxuryMandalaOrnament } from './components/MovingOrnaments';
 
 // Import beautiful generated assets
-const luxuryRoseBanner = 'https://lh3.googleusercontent.com/d/1-znBTEFksuV2tumfvkYMUlB9ZolaYzf-';
+const luxuryRoseBanner = 'https://lh3.googleusercontent.com/d/1Echl117iXK4WLZd_mJHLAm014HL4QPkk';
 const galleryPhoto3 = 'https://lh3.googleusercontent.com/d/1Z96Le5NkIC7QE0F2EsBhjw9amWUxVVzD';
 const galleryPhoto4 = 'https://lh3.googleusercontent.com/d/17_kvwjyzlh64zDsvxDOXKCXlV4ejoLUs';
 const galleryPhoto5 = 'https://lh3.googleusercontent.com/d/1ARkj7UUCiXAXokDLIFuuLR2NSu1aMOnY';
@@ -261,8 +262,20 @@ export default function App() {
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="space-y-2"
+                className="space-y-2 flex flex-col items-center"
               >
+                {/* Elegant Portrait Frame for Bride */}
+                <div className="w-28 h-28 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img
+                      src={galleryPhoto5}
+                      alt="Dea Husnul Khotimah"
+                      className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </div>
+
                 <h3 className="text-2xl font-serif text-amber-200 font-bold tracking-wide">
                   Dea Husnul Khotimah, S.Pd
                 </h3>
@@ -277,7 +290,7 @@ export default function App() {
               </motion.div>
 
               {/* Heart ornament */}
-              <div className="flex items-center justify-center gap-3">
+              <div className="flex items-center justify-center gap-3 py-4">
                 <div className="h-[1px] w-12 bg-gradient-to-r from-transparent to-gold/30" />
                 <Heart className="w-4 h-4 text-rose-700 fill-current animate-pulse" />
                 <div className="h-[1px] w-12 bg-gradient-to-l from-transparent to-gold/30" />
@@ -288,8 +301,20 @@ export default function App() {
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="space-y-2"
+                className="space-y-2 flex flex-col items-center"
               >
+                {/* Elegant Portrait Frame for Groom */}
+                <div className="w-28 h-28 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img
+                      src={galleryPhoto7}
+                      alt="Jupriyanto"
+                      className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+                </div>
+
                 <h3 className="text-2xl font-serif text-amber-200 font-bold tracking-wide uppercase">
                   Jupriyanto, S.E
                 </h3>
@@ -304,6 +329,9 @@ export default function App() {
               </motion.div>
             </div>
           </section>
+
+          {/* Section 2.5: Love Story Timeline */}
+          <LoveStory />
 
           {/* Section 3: Waktu & Tempat (Event Details) */}
           <section className="w-full max-w-xl mx-auto px-6 py-12 text-center space-y-10 relative">
