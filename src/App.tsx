@@ -34,9 +34,12 @@ import { RotatingMandala, FloatingSparkles, AmbientLightPulse, IslamicLantern, I
 const luxuryRoseBanner = 'https://lh3.googleusercontent.com/d/1Echl117iXK4WLZd_mJHLAm014HL4QPkk';
 const galleryPhoto3 = 'https://lh3.googleusercontent.com/d/1Z96Le5NkIC7QE0F2EsBhjw9amWUxVVzD';
 const galleryPhoto4 = 'https://lh3.googleusercontent.com/d/17_kvwjyzlh64zDsvxDOXKCXlV4ejoLUs';
-const galleryPhoto5 = 'https://lh3.googleusercontent.com/d/1ARkj7UUCiXAXokDLIFuuLR2NSu1aMOnY';
-const galleryPhoto6 = 'https://lh3.googleusercontent.com/d/15ATxIvBq2-YT-trwA45VgKWd87NkhuFp';
-const galleryPhoto7 = 'https://lh3.googleusercontent.com/d/1ztOoDF_P6t6ZZEKmP-VUHx-MBvn_srlX';
+const brideRoundPhoto = 'https://lh3.googleusercontent.com/d/1ARkj7UUCiXAXokDLIFuuLR2NSu1aMOnY';
+const galleryPhoto6 = 'https://lh3.googleusercontent.com/d/1Bs2LgT0ll-qTACM8p5ZKu_ra4U83EyzU';
+const galleryPhoto7 = 'https://lh3.googleusercontent.com/d/14GO8-cXSziGP3c8N3BEBplg9aq4Jrbw9';
+const galleryPhoto8 = 'https://lh3.googleusercontent.com/d/1C0z9qCLLKuuzJWDxzWtCQzJyBWMO8WDQ';
+const galleryPhoto9 = 'https://lh3.googleusercontent.com/d/16o2roeGX-qQ8dysYGPwtroP_-8O7kH9j';
+const groomRoundPhoto = 'https://lh3.googleusercontent.com/d/1ztOoDF_P6t6ZZEKmP-VUHx-MBvn_srlX';
 const weddingCoupleArt = 'https://lh3.googleusercontent.com/d/1u--oVb9bY-SFJhCpoV-cymzmKCYlhx0f';
 
 export default function App() {
@@ -265,10 +268,10 @@ export default function App() {
                 className="space-y-2 flex flex-col items-center"
               >
                 {/* Elegant Portrait Frame for Bride */}
-                <div className="w-28 h-28 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
+                <div className="w-40 h-40 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-2xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <img
-                      src={galleryPhoto5}
+                      src={brideRoundPhoto}
                       alt="Dea Husnul Khotimah"
                       className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -304,10 +307,10 @@ export default function App() {
                 className="space-y-2 flex flex-col items-center"
               >
                 {/* Elegant Portrait Frame for Groom */}
-                <div className="w-28 h-28 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
+                <div className="w-40 h-40 rounded-full border-2 border-gold/30 p-[3px] overflow-hidden shadow-2xl relative group bg-maroon-950/20 mb-3 hover:border-gold/60 transition-all duration-500">
                   <div className="w-full h-full rounded-full overflow-hidden">
                     <img
-                      src={galleryPhoto7}
+                      src={groomRoundPhoto}
                       alt="Jupriyanto"
                       className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -488,11 +491,6 @@ export default function App() {
             <GallerySlider
               images={[
                 {
-                  url: luxuryRoseBanner,
-                  title: 'Wedding Banner',
-                  desc: 'Meniti langkah awal menuju kebahagiaan abadi'
-                },
-                {
                   url: weddingCoupleArt,
                   title: 'Wedding Art',
                   desc: 'Ikatan suci dua insan yang dipenuhi berkah dan cinta'
@@ -508,11 +506,6 @@ export default function App() {
                   desc: 'Melangkah bersama dalam ridho-Nya menuju jannah'
                 },
                 {
-                  url: galleryPhoto5,
-                  title: 'Kisah Kita',
-                  desc: 'Setiap senyuman menyimpan sejuta harapan indah'
-                },
-                {
                   url: galleryPhoto6,
                   title: 'Bahagia Bersama',
                   desc: 'Menatap masa depan dengan keyakinan penuh cinta'
@@ -521,6 +514,16 @@ export default function App() {
                   url: galleryPhoto7,
                   title: 'Satu Tujuan',
                   desc: 'Mengarungi bahtera rumah tangga yang sakinah, mawaddah, warahmah'
+                },
+                {
+                  url: galleryPhoto8,
+                  title: 'Kisah Kasih',
+                  desc: 'Melangkah bersama mewujudkan mimpi dan harapan baru'
+                },
+                {
+                  url: galleryPhoto9,
+                  title: 'Cinta Abadi',
+                  desc: 'Mengarungi samudera hidup bersama dalam ikatan suci'
                 }
               ]}
             />
