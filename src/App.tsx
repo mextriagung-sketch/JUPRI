@@ -33,7 +33,6 @@ import { RotatingMandala, FloatingSparkles, AmbientLightPulse, IslamicLantern, I
 // Import beautiful generated assets
 const luxuryRoseBanner = 'https://lh3.googleusercontent.com/d/1Echl117iXK4WLZd_mJHLAm014HL4QPkk';
 const galleryPhoto3 = 'https://lh3.googleusercontent.com/d/1Z96Le5NkIC7QE0F2EsBhjw9amWUxVVzD';
-const galleryPhoto4 = 'https://lh3.googleusercontent.com/d/17_kvwjyzlh64zDsvxDOXKCXlV4ejoLUs';
 const brideRoundPhoto = 'https://lh3.googleusercontent.com/d/1ARkj7UUCiXAXokDLIFuuLR2NSu1aMOnY';
 const galleryPhoto6 = 'https://lh3.googleusercontent.com/d/1Bs2LgT0ll-qTACM8p5ZKu_ra4U83EyzU';
 const galleryPhoto7 = 'https://lh3.googleusercontent.com/d/14GO8-cXSziGP3c8N3BEBplg9aq4Jrbw9';
@@ -499,11 +498,6 @@ export default function App() {
                   url: galleryPhoto3,
                   title: 'Momen Indah',
                   desc: 'Setiap detik bersamamu adalah anugerah terindah'
-                },
-                {
-                  url: galleryPhoto4,
-                  title: 'Kebersamaan Indah',
-                  desc: 'Melangkah bersama dalam ridho-Nya menuju jannah'
                 },
                 {
                   url: galleryPhoto6,
